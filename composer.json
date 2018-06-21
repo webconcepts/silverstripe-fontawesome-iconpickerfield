@@ -1,7 +1,6 @@
 {
     "name": "thisisbd/silverstripe-fontawesome-iconpickerfield",
     "description": "Font Awesome Icon Picker for SilverStripe 3.1.x based on http://mjolnic.com/fontawesome-iconpicker",
-    "type": "silverstripe-module",
     "homepage": "http://github.com/thisisbd/silverstripe-fontawesome-iconpickerfield",
     "keywords": [
         "silverstripe","font awesome","icon picker"
@@ -14,10 +13,18 @@
         "issues": "http://github.com/thisisbd/silverstripe-fontawesome-iconpickerfield/issues"
     },
     "require": {
-        "silverstripe/cms": "~3.1",
-        "silverstripe/framework": "~3.1"
+        "silverstripe/cms": "^4",
+        "silverstripe/framework": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Thisisbd\\FontAwesomeIconPickerField\\": "code/"
+        }
     },
     "extra": {
-        "installer-name": "fontawesome-iconpickerfield"
+        "installer-name": "fontawesome-iconpickerfield",
+        "expose": [
+            "assets"
+        ]
     }
 }
