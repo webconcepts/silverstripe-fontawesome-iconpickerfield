@@ -17,12 +17,12 @@ class FontAwesomeIconPickerField extends TextField {
         $this->addExtraClass('form-control icp icp-auto');
 
         Requirements::css("//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css");
-        Requirements::css('thisisbd/fontawesomeiconpickerfield: assets/thirdparty/fontawesome-iconpicker-1.0.0/dist/css/fontawesome-iconpicker.min.css');
+        Requirements::css('thisisbd/silverstripe-fontawesome-iconpickerfield: assets/thirdparty/fontawesome-iconpicker-1.0.0/dist/css/fontawesome-iconpicker.min.css');
 
         Requirements::set_force_js_to_bottom(true);
-        Requirements::javascript('thisisbd/fontawesomeiconpickerfield: assets/thirdparty/fontawesome-iconpicker-1.0.0/dist/js/fontawesome-iconpicker.js');
-        Requirements::javascript('thisisbd/fontawesomeiconpickerfield: assets/thirdparty/jsyaml/dist/js-yaml.min.js');
-        Requirements::javascript('thisisbd/fontawesomeiconpickerfield: assets/setup-icon-picker.js');
+        Requirements::javascript('thisisbd/silverstripe-fontawesome-iconpickerfield: assets/thirdparty/fontawesome-iconpicker-1.0.0/dist/js/fontawesome-iconpicker.js');
+        Requirements::javascript('thisisbd/silverstripe-fontawesome-iconpickerfield: assets/thirdparty/jsyaml/dist/js-yaml.min.js');
+        Requirements::javascript('thisisbd/silverstripe-fontawesome-iconpickerfield: assets/setup-icon-picker.js');
 
         return parent::Field($properties);
     }
